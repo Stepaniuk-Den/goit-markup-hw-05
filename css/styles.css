@@ -91,12 +91,12 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 24px 0;
+  /* padding: 24px 0; */
   gap: 40px;
 }
 
 .nav .menu {
-  /* padding: 24px 0; */
+  padding: 24px 0;
   color: var(--secondary-color-text);
   text-decoration: none;
 
@@ -528,17 +528,17 @@ nav .link {
   width: 100vw;
   height: 100vh;
   background-color: rgba(46, 47, 66, 0.4);
-}
 
-/* .hero .btn:hover .modal,
-.hero .btn:focus .modal {
-} */
+  opacity: 1;
+  scale: 1;
+  transition: opacity, scale 250ms linear;
+}
 
 .is-hidden {
   visibility: hidden;
   opacity: 0;
+  scale: 1.2;
   pointer-events: none;
-  /* transform: scale 1.3; */
 }
 
 .modal {
@@ -548,8 +548,6 @@ nav .link {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* scale: 1;
-  transition: scale 1000ms linear; */
 
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
