@@ -11,6 +11,7 @@ GREEN #31D0AA
 */
 
 :root {
+  --modal-bg-color: #fcfcfc;
   --main-color-text: #434455;
   --secondary-color-text: #2e2f42;
   --third-color-text: #f4f4fd;
@@ -547,7 +548,7 @@ nav .link {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  background: #fcfcfc;
+  background-color: var(--modal-bg-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -569,14 +570,22 @@ nav .link {
   height: 24px;
   padding: 0;
 
-  background: #e7e9fc;
+  background-color: var(--secondary-color-btn);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+}
+
+.modal-close-btn:active {
+  background-color: var(--alt-secondary-color-btn);
 }
 
 .close-btn {
   width: 8px;
   height: 8px;
+}
+
+.modal-close-btn:active .close-btn {
+  fill: var(--alt-color);
 }
 
 /* ==================== Portfolio ==================== */
